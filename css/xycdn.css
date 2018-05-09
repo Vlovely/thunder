@@ -1,0 +1,133 @@
+body{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+}
+a{
+    transition:all .2s ease
+}
+.clear:after, .container:after, .nav:after,
+.tech_box:after, .goodness_box:after,
+.celebrity_box:after, .customer_list:after,
+.news_box:after, .VS_box:after, .servie_box:after,
+.charact_list:after, .pro_vs_head:after,
+.pro_vs_content:after, .downlaod_row:after,
+.adver_box:after, .pic_list:after,
+.technology_list:after, .pro_compare:after,
+.download_list:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*头部开始*/
+.header{
+    position: absolute;
+    width: 100%;
+    min-width: 1200px;
+    height: 62px;
+    z-index: 99;
+    transition:all .4s ease
+}
+.header:hover{
+    background: #1b1b1b;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo{
+    float: left;
+    width: 122px;
+    height: 62px;
+    background: url("../img/xy/logo.png")no-repeat 0 0;
+    background-size: 100% auto;
+}
+.logo a{
+    display: block;
+    height: 62px;
+}
+.nav{
+    float: left;
+}
+.nav li{
+    float: left;
+    position: relative;
+    width: 90px;
+    margin-left: 20px;
+}
+.nav li .line{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: #2569ff;
+    transform:rotateY(90deg);
+    transition:all .6s ease;
+}
+.nav li:hover .line{
+    transform: rotateY(180deg);
+}
+.nav li>a{
+    height: 62px;
+    line-height: 62px;
+    color: #999;
+    display: block;
+    text-align: center;
+}
+.nav li:hover>a{
+    color: #FFFFFF;
+    background: rgba(24, 25, 38, .8);
+}
+.nav_level{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 62px;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all .2s ease;
+}
+.nav li:hover .nav_level{
+    transform:scaleY(1)
+}
+.nav_level_list{
+    text-align: center;
+}
+.nav_level_list a{
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    font-size: 12px;
+    color: #999;
+    background: rgba(24, 25, 38, .8);
+}
+.nav_level_list a:hover{
+    background-color: #2569ff;
+    color: #FFFFFF;
+}
+.header_enter{
+    float: right;
+}
+.header_enter a{
+    display: inline-block;
+    width: 120px;
+    height: 62px;
+    text-align: center;
+    color: #999;
+    line-height: 62px;
+}
+.header_enter a.link_newUser{
+    background-color: #2569ff;
+    color: #FFFFFF;
+}
+.header_enter a:hover{
+    color: #FFFFFF;
+}
+.header_enter a.link_newUser:hover{
+    background-color: #568af2;
+    color: #FFFFFF;
+}

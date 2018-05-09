@@ -1,0 +1,873 @@
+body,html{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    font: 12px/1.5 tahoma,arial;
+}
+html{
+    display: block;
+}
+
+/*头部开始*/
+.header{
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    z-index: 999;
+}
+.head{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    display: block;
+    float: left;
+    margin: 14px 0 0 30px;
+    width: 117px;
+    height: 55px;
+}
+.nav_list{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nav_li{
+    float: left;
+    width: 156px;
+    position: relative;
+    height: 84px;
+}
+.btn_nav{
+    display: block;
+    width: 136px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -19px 0 0 -68px;
+    font-size: 16px;
+    color: #FFFFFF;
+    z-index: 6;
+}
+.ic_more{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-size: 22px;
+    width: 27px;
+    height: 19px;
+    margin-right: 11px;
+    top: 3px;
+}
+.more_nav{
+    position: absolute;
+    top: 0;
+    right: -162px;
+    width: 156px;
+    height: 9999px;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, .8);
+    transition: right .3s;
+}
+.nav_li:hover .more_nav{
+    right: 0;
+}
+#h_nav{
+    position: relative;
+    z-index: 5;
+}
+#h_nav li{
+    padding-bottom: 45px;
+    position: relative;
+}
+#h_nav li a{
+    color: #c5c8d0;
+}
+#h_nav li a:hover{
+    color: #edf3ff;
+}
+.header .btn_snav{
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    color: #cdf3ff;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+/*头部结束*/
+
+
+/*主体开始*/
+.main_wrap,.page_wp{
+    height: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.page_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bg_box,.video_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}
+video{
+    width: 1920px;
+    height: 1080px;
+    margin: -540px 0 0 -960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+}
+.video_box .after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: #000;
+    opacity: .4;
+}
+.tb_box{
+    width: 1920px;
+    height: 1080px;
+    margin: -540px 0 0 -960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    display: table;
+    text-align: center;
+}
+.tb_cont{
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    display: table-cell;
+    vertical-align: middle;
+}
+.text_video{
+    position: relative;
+    background: url("../img/video_txt.png")0 0 no-repeat;
+    width: 1023px;
+    height: 139px;
+    margin: 0 auto;
+}
+.ic_page{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    z-index: 10;
+    background: url("../img/ic_spr24.png")no-repeat -124px 0;
+    width: 38px;
+    height: 21px;
+    margin-left: -19px;
+}
+
+/*全屏滚动点*/
+.circles{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    height: 100%;
+    z-index: 10;
+    margin-top: -82px;
+}
+.circles a{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+.circles .cur,.circles a:hover{
+    background: #FFFFFF;
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+/*第二栏*/
+.carousel .tb_cont{
+    padding-bottom: 200px;
+}
+.carousel_list>li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:z-index .5s
+}
+.carousel .win .txt_tt{
+    background-position:  0 0;
+    width: 759px;
+}
+.carousel .vip .txt_tt{
+    background-position:  0 -416px;
+    width: 868px;
+}
+.carousel .mac .txt_tt{
+    background-position:  0 -104px;
+    width: 760px;
+}
+.carousel .android .txt_tt{
+    background-position:  0 -208px;
+    width: 762px;
+}
+.carousel .ios .txt_tt{
+    background-position:  0 -312px;
+    width: 979px;
+}
+.txt_link{
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+.carousel .txt_link a{
+    padding-right: 28px;
+    font-size: 48px;
+    line-height: 50px;
+    height: 50px;
+}
+.txt_link a{
+    color: #FFFFFF;
+    display: inline-block;
+    position: relative;
+    padding-right: 24px;
+    font-size: 40px;
+    line-height: 40px;
+    height: 40px;
+}
+.carousel .txt_link .ic_arr{
+    background: url("../img/ic_spr24.png")no-repeat 0 0;
+    width: 13px;
+    height: 24px;
+    margin-top: -12px;
+}
+.txt_link .ic_arr{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: url("../img/ic_spr24.png")no-repeat -106px 0;
+    width: 9px;
+    height: 17px;
+    margin-top: -6px;
+}
+.carousel .txt_tt{
+.carousel     width: 759px;
+    display: block;
+    height: 101px;
+    background-image: url("../img/carousel_txt.png");
+    margin: 33px auto 0;
+}
+.hide_txt{
+    text-indent: -9999em;
+    font-size: 0;
+    line-height: 0;
+}
+.carousel .btn_down{
+    margin: 40px auto 30px;
+}
+.btn_down{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 188px;
+    height: 54px;
+    font-size: 22px;
+    line-height: 54px;
+    font-weight: lighter;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-color: hsla(0,0%,100%,.5);
+}
+.txt_zan.show{
+    display: inline-block;
+}
+.txt_zan{
+    display: none;
+    position: relative;
+    padding-left: 34px;
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 22px;
+    margin-top: 24px;
+}
+.carousel .txt_zan{
+    margin-top: 0;
+}
+.page_box .zaned{
+    background-position: -200px 0;
+}
+.btn_zan{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url("../img/ic_spr24.png")no-repeat -18px 0;
+    width: 23px;
+    height: 20px;
+    margin-top: -10px;
+    transition: transfom .3s;
+}
+.carousel_btns{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    z-index: 5;
+}
+.carousel_btns .mid_wp{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+}
+.carousel_btns .btns_wp{
+    width: 755px;
+    position: relative;
+    margin: 0 auto;
+    height: 146px;
+    border-bottom: 1px solid #734936;
+    border-bottom-color:  hsla(0,0%,100%,.2);
+}
+.carousel_btns .btns_box{
+    width: 760px;
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    left: -3px;
+    height: 100%;
+    top: 0;
+}
+.carousel_btns .btns_box a{
+    display: inline-block;
+    width: 146px;
+    height: 146px;
+    margin: 0 3px;
+    position: relative;
+    opacity: .7;
+}
+.carousel_btns .btn_win .ic_btn{
+    background-position: 0 -3px;
+    width: 51px;
+    height: 53px;
+    margin: -27px 0 0 -26px;
+}
+.carousel_btns .btn_vip .ic_btn{
+    background-position: -610px -4px;
+    width: 58px;
+    height: 51px;
+    margin: -25px 0 0 -29px;
+}
+.carousel_btns .btn_mac .ic_btn{
+    background-position: -161px -4px;
+    width: 58px;
+    height: 51px;
+    margin: -26px 0 0 -29px;
+}
+.carousel_btns .btn_android .ic_btn{
+    background-position: -317px -1px;
+    width: 37px;
+    height: 57px;
+    margin: -29px 0 0 -19px;
+}
+.carousel_btns .btn_ios .ic_btn{
+    background-position: -471px 0;
+    width: 48px;
+    height: 59px;
+    margin: -30px 0 0 -24px;
+}
+.carousel_btns .btns_box .ic_btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/carousel_btns.png");
+    transition:transform .2s
+}
+.carousel_btns .btns_box a:hover .ic_btn{
+    transform:translateY(-4px)
+}
+.carousel_btns .ic_line{
+    position: absolute;
+    width: 146px;
+    height: 2px;
+    background: #fff;
+    bottom: -1px;
+    transition: left .5s;
+}
+.carousel .btns_box a.cur,.carousel .btns_box a:hover{
+    opacity: 1;
+}
+
+
+/*第三栏*/
+.product{
+    position: absolute;
+    overflow: hidden;
+}
+.product1{
+    top: 0;
+    left: 0;
+    width: 66%;
+    height: 50%;
+}
+.product2{
+    top: 50%;
+    left: 0;
+    width: 33%;
+    height: 50%;
+}
+.product3{
+    top: 50%;
+    left: 33%;
+    width: 33%;
+    height: 50%;
+}
+.product4{
+    top: 0;
+    left: 66%;
+    width: 34%;
+    height: 100%;
+}
+.product .btn_down{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 188px;
+    height: 54px;
+    font-size: 22px;
+    line-height: 54px;
+    font-weight: lighter;
+    border: 1px solid #FFFFFF;
+    margin: 20px auto 0;
+}
+.product_logo{
+    position: relative;
+    height: 105px;
+}
+.txt_product{
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+.p_xlyy .ic_logo{
+    width: 62px;
+    height: 62px;
+    margin: -31px 0 0 -31px;
+}
+.p_yxhz .ic_logo{
+    background-position: -78px 0;
+    width: 65px;
+    height: 60px;
+    margin: -30px 0 0 -32px;
+}
+.p_xljsq .ic_logo{
+    background-position: -166px 0;
+    width: 64px;
+    height: 60px;
+    margin: -30px 0 0 -32px;
+}
+.p_xlkn .ic_logo{
+    background-position: -334px 0;
+    width: 81px;
+    height: 75px;
+    margin: -38px 0 0 -41px;
+}
+.p_wjy .ic_logo{
+    background-position: -950px 0;
+    width: 85px;
+    height: 87px;
+    margin: -48px 0 0 -31px;
+}
+.p_jwzb .ic_logo{
+    background-position: -430px 0;
+    width: 78px;
+    height: 75px;
+    margin: -37px 0 0 -39px;
+}
+.p_yl .ic_logo{
+    background-position: -848px 0;
+    width: 82px;
+    height: 77px;
+    margin: -38px 0 0 -41px;
+}
+.p_brxyx .ic_logo{
+    background-position: -750px 0;
+    width: 65px;
+    height: 65px;
+    margin: -33px 0 0 -33px;
+}
+.product .ic_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/product_logo.png");
+}
+.txt_product .txt{
+    font-size: 30px;
+    line-height: 30px;
+    height: 30px;
+    margin: 0 7px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-weight: lighter;
+}
+.txt_product .ic_pc,.txt_product .ic_phone{
+    display: inline-block;
+    height: 23px;
+    margin: 0 7px;
+    vertical-align: top;
+    position: relative;
+    top: 5px;
+}
+.txt_product .ic_pc{
+    background: url("../img/ic_spr24.png")no-repeat -50px 0;
+    width: 22px;
+}
+.txt_product .ic_phone{
+    background: url("../img/ic_spr24.png")no-repeat -82px 0;
+    width: 14px;
+}
+.page4 .product1{
+    top: 0;
+    left: 0;
+    width: 34%;
+    height: 100%;
+}
+.page4 .product2{
+    top: 0;
+    left: 34%;
+    width: 66%;
+    height: 50%;
+}
+.page4 .product3{
+    top: 50%;
+    left: 34%;
+    width: 33%;
+    height: 50%;
+}
+.page4 .product4{
+    top: 50%;
+    left: 67%;
+    width: 33%;
+    height: 50%;
+}
+.bg_box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hover_box{
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: left .3s;
+    opacity: 0;
+}
+.page_box .product1 .txt_brief{
+    max-width: 60%;
+}
+.page_box .product2 .txt_brief{
+    max-width: 30%;
+}
+.page_box .product3 .txt_brief{
+    max-width: 30%;
+}
+.page_box .product4 .txt_brief{
+    max-width: 30%;
+}
+.page_box .txt_brief{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+    margin: 18px auto 0;
+    padding-bottom: 6px;
+}
+.hover_box .opc_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+}
+
+/*第五栏*/
+.page5 .product{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*底部*/
+.footer{
+    z-index: 10;
+    text-align: center;
+}
+.footer,.foot{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+.foot{
+    width: 1920px;
+    margin-left: -960px;
+    padding-bottom: 8px;
+    color: #b2b2b2;
+}
+.footer .btns_box{
+    font-size: 0;
+    line-height: 0;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.footer .big_links{
+    font-size: 20px;
+    color: #aaa;
+    line-height: 20px;
+    margin-bottom: 26px;
+    font-weight: lighter;
+}
+.footer .links{
+    font-size: 12px;
+    line-height: 18px;
+    color: #b2b2b2;
+}
+.footer .safe_links{
+    font-size: 0;
+    line-height: 0;
+    margin-top: 5px;
+}
+.footer .btns_box .btn_wechat{
+    background-position: 0 0;
+    cursor: pointer;
+}
+.footer .btns_box a{
+    display: inline-block;
+    width: 77px;
+    height: 77px;
+    margin: 0 27px;
+    background: url("../img/foot_btns.png");
+    position: relative;
+    transition:transform .2s
+}
+.footer .code_box{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    left: -9999px;
+    margin-left: -65px;
+    bottom: 80px;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.footer .code_box .ic_arr{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid dashed dashed;
+    border-color: #FFFFFF transparent transparent;
+    left: 50%;
+    margin-left: -8px;
+    top: 100%;
+}
+.footer .code_box img{
+    display: block;
+    height: 100%;
+}
+.footer .btns_box a:hover{
+    transform:translateY(-5px)
+}
+.footer .big_links a:hover,.footer .links a:hover,.footer .safe_links a:hover{
+    text-decoration: underline;
+}
+.footer .btns_box .btn_sina{
+    background-position: -131px 0;
+}
+.footer .btns_box .btn_forum{
+    background-position: -262px 0;
+}
+.footer .btns_box .btn_yang{
+    background-position: -523px 0;
+}
+.footer .big_links a{
+    color: #909090;
+    margin: 0 18px;
+}
+.footer .links a{
+    color: #b2b2b2;
+}
+.footer .safe_links a{
+    display: inline-block;
+    color: #999;
+    width: 67px;
+    font-size: 12px;
+    line-height: 14px;
+    height: 28px;
+    padding: 5px 0 5px 40px;
+    border:1px solid gray;
+    position: relative;
+    margin: 0 7px;
+}
+.footer .safe_links a img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 38px;
+}
+.page5 .product .tb_cont{
+    padding-bottom: 0;
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 120px;
+    margin-top: 80px;
+}
+.page5 .txt_link{
+    text-align: left;
+    opacity: .8;
+}
+.page5 .txt_link a{
+    padding-right: 28px;
+    font-size: 48px;
+    line-height: 50px;
+    height: 50px;
+}
+.page5 .txt_link .ic_arr{
+    background: url("../img/ic_spr24.png")no-repeat 0 0;
+    width: 13px;
+    height: 24px;
+    margin-top: -12px;
+}
+.page5 .txt_price{
+    opacity: .8;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.page5 .product .txt_brief{
+    margin: 15px 0 0 0 ;
+    opacity: .8;
+    text-align: left;
+    padding: 0;
+    max-width: 100%;
+}
+.page5 .btn_buy:hover{
+    text-decoration: none;
+    background: #0f83db;
+}
+.page5 .btn_buy{
+    display: block;
+    width: 190px;
+    height: 56px;
+    background: #1294f6;
+    font-size: 22px;
+    text-align: center;
+    line-height: 56px;
+    font-weight: lighter;
+    color: #FFFFFF;
+    margin: 8px 0 22px;
+}
+.page5 .txt_zan{
+    opacity: .8;
+    margin-top: 0;
+}
+
+
+/*反馈*/
+.btn_feedback{
+    position: absolute;
+    z-index: 50;
+    width: 54px;
+    height: 34px;
+    padding: 10px 0;
+    background: #333;
+    bottom: 24px;
+    right: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: .6;
+}
+
+
+/*公用*/
+.product .txt_zan.show{
+    display: inline-block;
+}
+.btn_zan:hover{
+    background-position: -200px 0;
+}
+.btn_zan:hover{
+    transform:translateY(-2px)
+}
+.btn_down:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: hsla(0,0%,100%,.3);
+    border-color: hsla(0,0%,100%,.3);
+}
+@media screen and (max-width: 1440px) and (min-width: 1081px){
+    .tb_box .tb_cont .text_video,.tb_box .tb_cont .txt_link,.tb_box .tb_cont .txt_tt,
+    .tb_box .tb_cont .txt_zan,.tb_box .tb_cont .btn_zan,
+    .tb_box .tb_cont .txt_brief,.tb_box .tb_cont .btn_buy,.tb_box .tb_cont,.footer .foot .btns_box,
+    .footer .foot .big_links,.footer .foot .links,.footer .foot p,.footer .foot .safe_links,
+    .page1 .ic_page,.btns_box .ic_btn,.carousel_btns .btns_box a{
+        transform: scale(.8);
+    }
+}
+@media screen and (max-width: 1440px) and (min-width: 1081px){
+    .cont_box .carousel_wp .tb_cont, .page_5 .product_box .txt_brief,
+    .page_5 .product_box .txt_link, .page_5 .product_box .txt_zan{
+        transform: scale(1);
+    }
+    .page5 .product .txt_brief{
+        margin-top: 0;
+    }
+    .page5 .product .tb_cont{
+        margin-top: 156px;
+        left: 300px;
+    }
+    .page5 .tb_box .tb_cont .txt_price{
+        margin-left: 86px;
+    }
+    .page5 .tb_box .tb_cont .btn_buy,
+    .page5 .tb_box .tb_cont .txt_zan{
+        margin-left: 68px;
+    }
+}
